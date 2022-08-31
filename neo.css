@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css?family=Julius+Sans+One|Poiret+One');
+body{
+	padding: 0;
+	margin: 0;
+	background-color:#000000;
+	color: #a6aead;
+	font-size: 16px;
+	font-family: 'Julius Sans One', sans-serif;
+}
+a.animated-button:link, a.animated-button:visited {
+	position: relative;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	color: #ffffff;
+	font-size:26px;
+	font-family: 'Julius Sans One', sans-serif;
+	border: 1px solid #ffffff;
+	background: linear-gradient(to right, #002829, transparent, #002829);
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	overflow: visible;
+	letter-spacing: .08em;
+	border-radius: 0;
+	display: inline-block;
+	width: 18%;
+	min-width: 190px;
+}
+a.anima:link, a.anima:visited {
+	position: relative;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	color: #ffffff;
+	font-size:13px;
+	font-family: 'Julius Sans One', sans-serif;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	overflow: visible;
+	letter-spacing: .08em;
+	border-radius: 0;
+	display: inline-block;
+	width: 18%;
+	min-width: 190px;
+}
+.overflow{
+	overflow: hidden;
+}
+.ma{
+	margin: auto;
+}
+.mb{
+	margin-bottom: 10px;
+}
+.pt{
+	padding-top: 10px;
+}
+.hr{
+	width: 50%;
+	background: linear-gradient(to right, transparent ,#002829, transparent);
+	height: 2px;
+	border: 0;
+}
+.left{
+	left: 0;
+}
+.right{
+	right: 0;
+}
+.left:hover{
+	background: linear-gradient(to right,transparent, #002829);
+}
+.right:hover{
+	background: linear-gradient(to right,#002829, transparent);
+}
