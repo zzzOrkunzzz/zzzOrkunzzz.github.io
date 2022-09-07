@@ -16,27 +16,26 @@
 
 <!-- Navigation Bar -->
 <div class="w3-bar w3-theme-d4 w3-large">
-  <a href="#" class="w3-bar-item w3-button w3-theme-d5 w3-mobile w3-hover-theme  w3-hover-shadow"><i class="fa fa-hospital-o w3-margin-right"></i>HospitaDent</a>
-  <a href="#rooms" class="w3-bar-item w3-button w3-hover-theme w3-hover-shadow w3-mobile">Rooms</a>
-  <a href="#about" class="w3-bar-item w3-button w3-hover-theme w3-hover-shadow w3-mobile">About</a>
-  <a href="#contact" class="w3-bar-item w3-button w3-hover-theme w3-hover-shadow w3-mobile">Contact</a>
-  <a href="#contact" class="w3-bar-item w3-button w3-hover-theme w3-hover-shadow w3-right w3-light-grey w3-mobile">Book Now</a>
+  <a href="#" class="w3-bar-item w3-button w3-theme-d5 w3-mobile w3-hover-theme  w3-hover-shadow w3-padding-x"> <i class="fa fa-hospital-o w3-margin-right"></i>HospitaDent</a>
+  <a href="#rooms" class="w3-bar-item w3-button w3-hover-theme w3-hover-shadow w3-right w3-mobile w3-padding-x">Rooms</a>
+  <a href="#about" class="w3-bar-item w3-button w3-hover-theme w3-hover-shadow w3-right w3-mobile w3-padding-x">About</a>
+  <a href="#contact" class="w3-bar-item w3-button w3-hover-theme w3-hover-shadow w3-right w3-mobile w3-padding-x">Contact</a>
 </div>
 <!-- Header -->
 <header class="w3-display-container w3-content w3-card" style="max-width:1500px;">
-  <img class="w3-image" src="https://www.w3schools.com/w3images/hotel.jpg" alt="The Hotel" style="min-width:1000px" width="1500" height="800">
+  <img class="w3-image w3-opacity" src="https://www.w3schools.com/w3images/hotel.jpg" alt="The Hotel" style="min-width:1000px" width="1500" height="800">
   <div class="w3-display-middle w3-padding w3-col l6 m8">
-    <div class="w3-container w3-theme-l3 w3-card">
+    <div class="w3-container w3-card">
       <h2><i class="fa fa-bed w3-margin-right"></i>Hotel Name</h2>
     </div>
-    <div class="w3-container w3-theme-light w3-theme-dark w3-card">
+    <div class="w3-container w3-card">
       <form action="/action_page.php" target="_blank">
           <div class="w3-margin">
-            <label><i class="fa fa-dashboard"></i> Check In</label>
-            <input class="w3-input w3-border w3-margin" type="text" placeholder="DD MM YYYY" name="CheckIn" required>
+            <label><i class="fa fa-dashboard"></i><b> Check In</b> </label>
+            <input class="w3-input w3-card w3-margin w3-transparent w3-text-black" type="text" placeholder="DD MM YYYY" name="CheckIn" required>
           </div>
           <div class="w3-margin">
-            <label><i class="fa fa-calendar-o"></i> Check Out</label>
+            <label><i class="fa fa-calendar-o"></i><b> Check Out</b></label>
             <input class="w3-input w3-border w3-margin" type="text" placeholder="DD MM YYYY" name="CheckOut" required>
           </div>
         <button class="w3-button w3-hover-white w3-card w3-margin" type="submit"><i class="fa fa-search w3-margin-right"></i> Search availability</button>
