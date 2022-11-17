@@ -5,74 +5,261 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Okta</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/w3.css">
     <link rel="stylesheet" href="css/w3-theme-light-blue.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
 </head>
-<body>
-    <div class="w3-bar w3-theme-d4 w3-large w3-top">
-        <div class="w3-display-container w3-content" style="max-width:1500px;">
-            <a href="#" class="w3-bar-item w3-button w3-hover-theme w3-mobile w3-darkness w3-hover-shadow w3-padding-x">
-              <img src="img/okta.jpg" alt="" style="height: 24px;"> okta
-            </a>
-            <button class="w3-button w3-darkness w3-hover-theme w3-hover-shadow w3-right w3-mobile w3-padding-x">Free Trial</button>
-            <button class="w3-button w3-hover-theme w3-hover-shadow w3-right w3-mobile w3-padding-x">Contact Us</button>
-            <a href="#rooms" class="w3-bar-item w3-button w3-hover-theme w3-hover-shadow w3-right w3-mobile w3-padding-x">Customer Identity</a>
-            <a href="#about" class="w3-bar-item w3-button w3-hover-theme w3-hover-shadow w3-right w3-mobile w3-padding-x">Workforce Identity</a>
-            <a href="#contact" class="w3-bar-item w3-button w3-hover-theme w3-hover-shadow w3-right w3-mobile w3-padding-x">Why okta?</a>
-            <a href="#contact" class="w3-bar-item w3-button w3-hover-theme w3-hover-shadow w3-right w3-mobile w3-padding-x">Developers</a>
-            <a href="#contact" class="w3-bar-item w3-button w3-hover-theme w3-hover-shadow w3-right w3-mobile w3-padding-x">Resources</a>
-            
-        </div>
-    </div>
-      <!-- Header -->
-      <br>
-      <header class="w3-content w3-card w3-theme-l3" style="max-width:1500px;">
-        <div class="w3-row">
-          <div class="w3-half">
-            <div class="w3-padding">
-              <div class="w3-container  w3-center">
-                <br><h1 class="w3-xxxlarge"><br><br>Everything starts with Identity</h1>
-              </div>
-              <div class="w3-container w3-auto w3-center">
-                <p class="w3-xlarge">Identity can create great user experiences, increase customer sign-ups, improve employee productivity, and get apps to market faster.<br><br><br><br><br><br><br></p> 
-                <a class="w3-button w3-hover-white w3-card w3-xlarge" href="https://www.okta.com/free-trial/"><i class="fa fa-search w3-margin-right"></i> Get Started</a>
-                <a class="w3-button w3-hover-white w3-card w3-xlarge" href="https://www.okta.com/contact-sales/"><i class="fa fa-phone w3-margin-right"></i> Talk to us</a><br><br><br><br><br><br><br>
+<body> 
+    <div class="w3-top">
+      <div class="w3-bar w3-theme-d1 w3-card w3-auto w3-large" id="myNavbar" style="max-width:1500px">
+        <a href="https://www.okta.com/" class="w3-padding">
+          <svg style="height: 28px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 109.21 36"><path d="M98.97,23.67c-3.05,0-5.2-2.38-5.2-5.51s2.15-5.51,5.2-5.51,5.14,2.38,5.14,5.51-2.12,5.51-5.14,5.51Zm-.49,3.28c2.46,0,4.55-.96,5.87-2.97,.25,1.95,1.66,2.66,3.44,2.66h1.42v-3.09h-.61c-1.01,0-1.26-.49-1.26-1.64V9.69h-3.26v2.51c-1.11-1.76-3.2-2.82-5.6-2.82-4.28,0-8.21,3.59-8.21,8.78s3.94,8.78,8.21,8.78Zm-16.79-4.24c0,2.78,1.72,3.93,3.78,3.93h3.97v-3.09h-2.89c-1.2,0-1.45-.46-1.45-1.64V12.78h4.34v-3.09h-4.34V4h-3.41V22.71Zm-15.53,3.93h3.41v-7.27h1.14l5.81,7.27h4.31l-7.41-9.22,5.69-7.73h-3.84l-4.65,6.53h-1.05V4h-3.41V26.64Zm-11.07-17.26c-4.77,0-8.7,3.59-8.7,8.78s3.94,8.78,8.7,8.78,8.7-3.59,8.7-8.78-3.94-8.78-8.7-8.78Zm0,14.29c-3.05,0-5.2-2.38-5.2-5.51s2.15-5.51,5.2-5.51,5.2,2.38,5.2,5.51-2.15,5.51-5.2,5.51Z" fill="current"></path><path d="M19.8,.26l-.74,9.12c-.35-.04-.7-.06-1.06-.06-.45,0-.89,.03-1.32,.1l-.42-4.42c-.01-.14,.1-.26,.24-.26h.75l-.36-4.47c-.01-.14,.1-.26,.23-.26h2.45c.14,0,.25,.12,.23,.26h0Zm-6.18,.45c-.04-.13-.18-.21-.31-.16l-2.3,.84c-.13,.05-.19,.2-.13,.32l1.87,4.08-.71,.26c-.13,.05-.19,.2-.13,.32l1.91,4.01c.69-.38,1.44-.67,2.23-.85L13.63,.71ZM7.98,3.25l5.29,7.46c-.67,.44-1.28,.96-1.8,1.56l-3.17-3.12c-.1-.1-.09-.26,.01-.35l.58-.48-3.15-3.19c-.1-.1-.09-.26,.02-.35l1.87-1.57c.11-.09,.26-.07,.34,.04ZM3.54,7.57c-.11-.08-.27-.04-.34,.08l-1.22,2.12c-.07,.12-.02,.27,.1,.33l4.06,1.92-.38,.65c-.07,.12-.02,.28,.11,.33l4.04,1.85c.29-.75,.68-1.45,1.16-2.08L3.54,7.57ZM.55,13.33c.02-.14,.16-.22,.29-.19l8.85,2.31c-.23,.75-.36,1.54-.38,2.36l-4.43-.36c-.14-.01-.24-.14-.21-.28l.13-.74-4.47-.42c-.14-.01-.23-.14-.21-.28l.42-2.41h0Zm-.33,5.98c-.14,.01-.23,.14-.21,.28l.43,2.41c.02,.14,.16,.22,.29,.19l4.34-1.13,.13,.74c.02,.14,.16,.22,.29,.19l4.28-1.18c-.25-.74-.41-1.53-.45-2.34L.21,19.31Zm1.42,6.34c-.07-.12-.02-.27,.1-.33l8.26-3.92c.31,.74,.73,1.43,1.23,2.05l-3.62,2.58c-.11,.08-.27,.05-.34-.07l-.38-.66-3.69,2.55c-.11,.08-.27,.04-.34-.08l-1.23-2.12Zm10.01-1.72l-6.43,6.51c-.1,.1-.09,.26,.02,.35l1.88,1.57c.11,.09,.26,.07,.34-.04l2.6-3.66,.58,.49c.11,.09,.27,.07,.35-.05l2.52-3.66c-.68-.42-1.31-.93-1.85-1.51Zm-1.27,10.45c-.13-.05-.19-.2-.13-.32l3.81-8.32c.7,.36,1.46,.63,2.25,.78l-1.12,4.3c-.03,.13-.18,.21-.31,.16l-.71-.26-1.19,4.33c-.04,.13-.18,.21-.31,.16l-2.3-.84h0Zm6.56-7.75l-.74,9.12c-.01,.14,.1,.26,.23,.26h2.45c.14,0,.25-.12,.23-.26l-.36-4.47h.75c.14,0,.25-.12,.24-.26l-.42-4.42c-.43,.07-.87,.1-1.32,.1-.36,0-.71-.02-1.06-.07h0ZM25.76,1.94c.06-.13,0-.27-.13-.32l-2.3-.84c-.13-.05-.27,.03-.31,.16l-1.19,4.33-.71-.26c-.13-.05-.27,.03-.31,.16l-1.12,4.3c.8,.16,1.55,.43,2.25,.78L25.76,1.94h0Zm5.02,3.63l-6.43,6.51c-.54-.58-1.16-1.09-1.85-1.51l2.52-3.66c.08-.11,.24-.14,.35-.05l.58,.49,2.6-3.66c.08-.11,.24-.13,.34-.04l1.88,1.57c.11,.09,.11,.25,.02,.35Zm3.48,5.12c.13-.06,.17-.21,.1-.33l-1.23-2.12c-.07-.12-.23-.15-.34-.08l-3.69,2.55-.38-.65c-.07-.12-.23-.16-.34-.07l-3.62,2.58c.5,.62,.91,1.31,1.23,2.05l8.26-3.92Zm1.3,3.32l.42,2.41c.02,.14-.07,.26-.21,.28l-9.11,.85c-.04-.82-.2-1.6-.45-2.34l4.28-1.18c.13-.04,.27,.05,.29,.19l.13,.74,4.34-1.13c.13-.03,.27,.05,.29,.19h0Zm-.41,8.85c.13,.03,.27-.05,.29-.19l.42-2.41c.02-.14-.07-.26-.21-.28l-4.47-.42,.13-.74c.02-.14-.07-.26-.21-.28l-4.43-.36c-.02,.82-.15,1.61-.38,2.36l8.85,2.31h0Zm-2.36,5.5c-.07,.12-.23,.15-.34,.08l-7.53-5.2c.48-.63,.87-1.33,1.16-2.08l4.04,1.85c.13,.06,.18,.21,.11,.33l-.38,.65,4.06,1.92c.12,.06,.17,.21,.1,.33l-1.22,2.12h0Zm-10.07-3.07l5.29,7.46c.08,.11,.24,.13,.34,.04l1.87-1.57c.11-.09,.11-.25,.02-.35l-3.15-3.19,.58-.48c.11-.09,.11-.25,.01-.35l-3.17-3.12c-.53,.6-1.13,1.13-1.8,1.56h0Zm-.05,10.16c-.13,.05-.27-.03-.31-.16l-2.42-8.82c.79-.18,1.54-.47,2.23-.85l1.91,4.01c.06,.13,0,.28-.13,.32l-.71,.26,1.87,4.08c.06,.13,0,.27-.13,.32l-2.3,.84h0Z" fill="current" fill-rule="evenodd"></path></svg>
+          </a>
+        <!-- Right-sided navbar links -->
+        <div class="w3-right w3-hide-small">
+          <a href="https://login.okta.com/" class="w3-button w3-hover-theme w3-hover-shadow w3-right w3-mobile w3-padding-x"><i class="fa fa-user-circle"></i> Login</a>
+          <a class="w3-button w3-darkness w3-hover-theme w3-hover-shadow w3-right w3-mobile w3-padding-x" href="https://www.okta.com/free-trial">Free Trial</a>
+          <a class="w3-button w3-hover-theme w3-hover-shadow w3-right w3-mobile w3-padding-x" href="https://www.okta.com/contact-sales/">Contact Us</a>
+          <!--******-->
+          <div class="w3-dropdown-hover">
+            <button class="w3-button w3-hover-theme w3-hover-shadow w3-mobile w3-padding-x">Customer Identity</button>
+            <div class="w3-dropdown-content w3-auto w3-display-topmiddle w3-theme-l1">
+              <div class="w3-row w3-padding-large">
+                <div class="w3-third w3-bar-block w3-padding-large">
+                  <h2>Customer Identity Cloud</h2>
+                  <p class="w3-medium">Secure your consumer and SaaS apps, while creating optimized digital experiences. Innovate without compromise with Customer Identity Cloud.</p>
+                  <a href="https://auth0.com/signup?ocid=7014z000001cbvZAAQ-aPA4z0000008OZeGAM" class="w3-bar-item w3-hover-shadow">Free Trial</a>
+                  <a href="https://www.okta.com/pricing/#customer-identity-products" class="w3-bar-item w3-hover-shadow">Pricing</a>
+                  <hr>
+                  <a href="https://www.okta.com/customer-identity/" class="w3-bar-item w3-hover-shadow">Explore Customer Identity</a>
+                </div>
+                <div class="w3-third w3-bar-block w3-padding-large">
+                  <h3>Key Features</h3>
+                  <a href="https://auth0.com/universal-login" class="w3-bar-item w3-hover-shadow">Universal Login</a>
+                  <a href="https://auth0.com/single-sign-on" class="w3-bar-item w3-hover-shadow">Single Sign On</a>
+                  <a href="https://www.okta.com/customer-identity/#attack-protection" class="w3-bar-item w3-hover-shadow">Attack Protection</a>
+                  <a href="https://www.okta.com/customer-identity/#attack-protection" class="w3-bar-item w3-hover-shadow">Organizations</a>
+                  <a href="https://auth0.com/passwordless" class="w3-bar-item w3-hover-shadow">Passwordless</a>
+                  <hr>
+                  <a href="https://www.okta.com/customer-identity/" class="w3-bar-item w3-hover-shadow">See All Features</a>
+                </div>
+                <div class="w3-third w3-bar-block w3-padding-large">
+                  <h3>Go Further</h3>
+                  <a href="https://auth0.com/marketplace" class="w3-bar-item w3-hover-shadow">Auth0 Marketplace</a>
+                  <a href="https://developer.auth0.com/resources" class="w3-bar-item w3-hover-shadow">Developer Center</a>
+                  <a href="https://community.auth0.com/?_ga=2.183091366.1481579306.1666290267-1015602461.1664989690&_gl=1%2Ahds30i%2Arollup_ga%2AMTAxNTYwMjQ2MS4xNjY0OTg5Njkw%2Arollup_ga_F1G3E656YZ%2AMTY2NjI5MDI2Ny4zLjEuMTY2NjI5MDUwNy40NC4wLjA." class="w3-bar-item w3-hover-shadow">Community</a>
+                  <a href="https://support.auth0.com/?_ga=2.174861474.1481579306.1666290267-1015602461.1664989690&_gl=1%2Aquf9%2Arollup_ga%2AMTAxNTYwMjQ2MS4xNjY0OTg5Njkw%2Arollup_ga_F1G3E656YZ%2AMTY2NjI5MDI2Ny4zLjEuMTY2NjI5MDUyNC4yNy4wLjA." class="w3-bar-item w3-hover-shadow">Knowledge Base</a>
+                  <a href="https://status.auth0.com/?_gl=1%2A106pl39%2Arollup_ga%2AMzAyODgzOTQ2LjE2NjEzODIzNzE.%2Arollup_ga_F1G3E656YZ%2AMTY2Njk3MjM3OC4yMS4wLjE2NjY5NzIzNzguNjAuMC4w&_ga=2.76843029.1408116888.1666972379-302883946.1661382371" class="w3-bar-item w3-hover-shadow">Status</a>
+                </div>
               </div>
             </div>
           </div>
-          <div class="w3-half">
-            <img class="" src="https://www.okta.com/_static/web/static/3ba4342698e9557b2cebd2e6ad038d72/a7869/Hero_Photo402x.png" alt="Identity">
+          <!--******-->
+          <div class="w3-dropdown-hover">
+            <button class="w3-button w3-hover-theme w3-hover-shadow w3-mobile w3-padding-x">Workforce Identity</button>
+            <div class="w3-dropdown-content w3-auto w3-display-topmiddle w3-theme-l1">
+              <div class="w3-row w3-padding-large">
+                <div class="w3-third w3-bar-block w3-padding-large">
+                  <h2>Workforce Identity Cloud</h2>
+                  <p class="w3-medium">Connect and protect your employees, contractors, and business partners with Identity-powered security. Empower agile workforces and high-performing IT teams with Workforce Identity Cloud.</p>
+                  <a href="https://www.okta.com/free-trial/" class="w3-bar-item w3-hover-shadow">Free Trial</a>
+                  <a href="https://www.okta.com/pricing/" class="w3-bar-item w3-hover-shadow">Pricing</a>
+                  <hr>
+                  <a href="https://www.okta.com/workforce-identity/" class="w3-bar-item w3-hover-shadow">Explore Workfore Identity</a>
+                </div>
+                <div class="w3-third w3-bar-block w3-padding-large">
+                  <h3>Key Features</h3>
+                  <a href="https://www.okta.com/products/single-sign-on/" class="w3-bar-item w3-hover-shadow">Single Sign-on</a>
+                  <a href="https://www.okta.com/products/adaptive-multi-factor-authentication/" class="w3-bar-item w3-hover-shadow">Adaptive MFA</a>
+                  <a href="https://www.okta.com/products/lifecycle-management/" class="w3-bar-item w3-hover-shadow">Lifecycle Management</a>
+                  <a href="https://www.okta.com/platform/workflows/" class="w3-bar-item w3-hover-shadow">Workflow Management</a>
+                  <a href="https://www.okta.com/products/identity-governance/" class="w3-bar-item w3-hover-shadow">Identity Governance</a>
+                  <hr>
+                  <a href="https://www.okta.com/workforce-identity/" class="w3-bar-item w3-hover-shadow">See All Features</a>
+                </div>
+                <div class="w3-third w3-bar-block w3-padding-large">
+                  <h3>Go Further</h3>
+                  <a href="https://www.okta.com/okta-integration-network/" class="w3-bar-item w3-hover-shadow">Okta Integration Network</a>
+                  <a href="https://developer.okta.com/" class="w3-bar-item w3-hover-shadow">Developer Center</a>
+                  <a href="https://devforum.okta.com/" class="w3-bar-item w3-hover-shadow">Community</a>
+                  <a href="https://support.okta.com/help/s/knowledge?language=en_US" class="w3-bar-item w3-hover-shadow">Knowledge Base</a>
+                  <a href="https://status.okta.com/?_ga=2.15183030.1408537636.1665532992-1758812997.1653668763" class="w3-bar-item w3-hover-shadow">Status</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--******-->
+          <div class="w3-dropdown-hover">
+            <button class="w3-button w3-hover-theme w3-hover-shadow w3-mobile w3-padding-x">Developers</button>
+            <div class="w3-dropdown-content w3-auto w3-display-topmiddle w3-theme-l1">
+              <div class="w3-flex w3-padding-large" style="width: 1000px;">
+                <div class="w3-third w3-bar-block w3-padding-large">
+                  <h2>For Developers</h2>
+                  <p class="w3-medium">Start building with powerful and extensible out-of-the-box features, plus thousands of integrations and customizations. Our developer community is here for you.</p>
+                </div>
+                <div class="w3-bar-block w3-padding-large">
+                  <h3>Customer Identity Cloud</h3>
+                  <a href="https://auth0.com/marketplace" class="w3-bar-item w3-hover-shadow">Auth0 Marketplace</a>
+                  <a href="https://developer.auth0.com/resources" class="w3-bar-item w3-hover-shadow">Developer Center</a>
+                  <a href="https://community.auth0.com/?_ga=2.183091366.1481579306.1666290267-1015602461.1664989690&_gl=1%2Ahds30i%2Arollup_ga%2AMTAxNTYwMjQ2MS4xNjY0OTg5Njkw%2Arollup_ga_F1G3E656YZ%2AMTY2NjI5MDI2Ny4zLjEuMTY2NjI5MDUwNy40NC4wLjA." class="w3-bar-item w3-hover-shadow">Community</a>
+                  <a href="https://support.auth0.com/?_ga=2.174861474.1481579306.1666290267-1015602461.1664989690&_gl=1%2Aquf9%2Arollup_ga%2AMTAxNTYwMjQ2MS4xNjY0OTg5Njkw%2Arollup_ga_F1G3E656YZ%2AMTY2NjI5MDI2Ny4zLjEuMTY2NjI5MDUyNC4yNy4wLjA." class="w3-bar-item w3-hover-shadow">Knowledge Base</a>
+                  <hr>
+                  <a href="https://auth0.com/signup?ocid=7014z000001cbvZAAQ-aPA4z0000008OZeGAM" class="w3-bar-item w3-hover-shadow">Sign Up at Auth0 by Okta</a>
+                </div>
+                <div class="w3-bar-block w3-padding-large">
+                  <h3>Workforce Identity Cloud</h3>
+                  <a href="https://www.okta.com/okta-integration-network/" class="w3-bar-item w3-hover-shadow">Okta Integration Network</a>
+                  <a href="https://developer.okta.com/" class="w3-bar-item w3-hover-shadow">Developer Center</a>
+                  <a href="https://devforum.okta.com/" class="w3-bar-item w3-hover-shadow">Community</a>
+                  <a href="https://devforum.okta.com/" class="w3-bar-item w3-hover-shadow">Knowledge Base</a>
+                  <hr>
+                  <a href="https://www.okta.com/free-trial/" class="w3-bar-item w3-hover-shadow">Sign Up with Okta</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--***why okta?***-->
+          <div class="w3-dropdown-hover">
+            <button class="w3-button w3-hover-theme w3-hover-shadow w3-mobile w3-padding-x">Why Okta</button>
+            <div class="w3-dropdown-content w3-auto w3-display-topmiddle w3-theme-l1">
+              <div class="w3-flex w3-padding-large">
+                <div class="w3-third w3-bar-block w3-padding-large">
+                  <h2>Why Okta?</h2>
+                  <p class="w3-medium">Okta gives you a neutral, powerful and extensible platform that puts identity at the heart of your stack. No matter what industry, use case, or level of support you need, we’ve got you covered.</p>
+                </div>
+                <div class="w3-bar-block w3-padding-large">
+                  <h3>Your Goals</h3>
+                  <a href="https://www.okta.com/workforce-identity/" class="w3-bar-item w3-hover-shadow">High-performing IT</a>
+                  <a href="https://www.okta.com/customer-identity/" class="w3-bar-item w3-hover-shadow">Optimized Experiences</a>
+                  <a href="https://www.okta.com/zero-trust/" class="w3-bar-item w3-hover-shadow">Identity-Powered Security</a>
+                  <a href="https://www.okta.com/customer-identity/" class="w3-bar-item w3-hover-shadow">Innovation without Compromise</a>
+                  <a href="https://www.okta.com/workforce-identity/" class="w3-bar-item w3-hover-shadow">Agile Workforces</a>
+                </div>
+                <div class="w3-bar-block w3-padding-large">
+                  <h3>Your Industry</h3>
+                  <a href="https://www.okta.com/solutions/public-sector/" class="w3-bar-item w3-hover-shadow">Public Sector</a>
+                  <a href="https://www.okta.com/solutions/financial-services/" class="w3-bar-item w3-hover-shadow">Financial Services</a>
+                  <a href="https://www.okta.com/solutions/retail/" class="w3-bar-item w3-hover-shadow">Retail</a>
+                  <a href="https://www.okta.com/solutions/healthcare/" class="w3-bar-item w3-hover-shadow">Healthcare</a>
+                  <a href="https://www.okta.com/solutions/travel-hospitality/" class="w3-bar-item w3-hover-shadow">Travel & Hospitality</a>
+                  <a href="https://www.okta.com/solutions/technology/" class="w3-bar-item w3-hover-shadow">Technology</a>
+                  <a href="https://www.okta.com/solutions/energy/" class="w3-bar-item w3-hover-shadow">Energy</a>
+                  <a href="https://www.okta.com/nonprofits/" class="w3-bar-item w3-hover-shadow">Nonprofit</a>
+                </div>
+                <div class="w3-bar-block w3-padding-large">
+                  <h3>Ensuring Success</h3>
+                  <a href="https://www.okta.com/customers/" class="w3-bar-item w3-hover-shadow">Customer Success Stories</a>
+                  <a href="https://www.okta.com/okta-advantage/" class="w3-bar-item w3-hover-shadow">Okta Advantage</a>
+                  <a href="https://www.okta.com/transparency/" class="w3-bar-item w3-hover-shadow">Transparency</a>
+                  <a href="https://trust.okta.com/" class="w3-bar-item w3-hover-shadow">Trust</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--******-->
+          <div class="w3-dropdown-hover">
+            <button class="w3-button w3-hover-theme w3-hover-shadow w3-mobile w3-padding-x">Resources</button>
+            <div class="w3-dropdown-content w3-display-topmiddle w3-theme-l1">
+              <div class="w3-flex w3-padding-large" style="width: 1300px;">
+                <div class="w3-quarter w3-bar-block w3-padding-large">
+                  <h2>Resources and Support</h2>
+                  <p class="w3-medium">Here's everything you need to succeed with Okta. From professional services to documentation, all via the latest industry blogs, we've got you covered.</p>
+                </div>
+                <div class="w3-bar-block w3-padding-large">
+                  <h3>Resources</h3>
+                  <a href="https://www.okta.com/customers/" class="w3-bar-item w3-hover-shadow">Customer Case Studies</a>
+                  <a href="https://www.okta.com/resources/" class="w3-bar-item w3-hover-shadow">Featured Resources</a>
+                  <a href="https://www.okta.com/resources/events/" class="w3-bar-item w3-hover-shadow">Events</a>
+                  <a href="https://www.okta.com/blog/" class="w3-bar-item w3-hover-shadow">Blog</a>
+                  <a href="https://www.okta.com/press-room/" class="w3-bar-item w3-hover-shadow">Press Room</a>
+                  <a href="https://www.okta.com/resources/content-library/?field_resource_solutions_target_id=All&type=analyst_research" class="w3-bar-item w3-hover-shadow">Analyst Research</a>
+                  <a href="https://www.okta.com/resources/content-library/?type=datasheet" class="w3-bar-item w3-hover-shadow">Datasheets</a>
+                  <a href="https://www.okta.com/resources/content-library/?type=demo" class="w3-bar-item w3-hover-shadow">Demo Library</a>
+                  <a href="https://www.okta.com/resources/content-library/?field_resource_solutions_target_id=All&type=video" class="w3-bar-item w3-hover-shadow">Videos</a>
+                  <a href="https://www.okta.com/resources/content-library/?field_resource_solutions_target_id=All&type=webinar" class="w3-bar-item w3-hover-shadow">Webinars</a>
+                  <a href="https://www.okta.com/resources/content-library/?field_resource_solutions_target_id=All&type=whitepaper" class="w3-bar-item w3-hover-shadow">Whitepapers</a>
+                </div>
+                <div class="w3-bar-block w3-padding-large">
+                  <h3>Customer Success</h3>
+                  <a href="https://www.okta.com/customer-first/" class="w3-bar-item w3-hover-shadow">Customer First Overview</a>
+                  <a href="https://devforum.okta.com/" class="w3-bar-item w3-hover-shadow">Okta Community</a>
+                  <a href="https://www.okta.com/services/success-and-support/" class="w3-bar-item w3-hover-shadow">Support Services</a>
+                  <a href="https://www.okta.com/services/professional-services/" class="w3-bar-item w3-hover-shadow">Professional Services</a>
+                  <a href="https://www.okta.com/services/training/" class="w3-bar-item w3-hover-shadow">Training</a>
+                  <a href="https://www.okta.com/services/certification/" class="w3-bar-item w3-hover-shadow">Certification</a>
+                  <a href="https://www.okta.com/partners/meet-our-partners/" class="w3-bar-item w3-hover-shadow">Find a Partner</a>
+                </div>
+                <div class="w3-bar-block w3-padding-large">
+                  <h3>Support</h3>
+                  <a href="https://support.okta.com/help/s/?language=en_US&_ga=2.141001906.1408537636.1665532992-1758812997.1653668763&_gl=1%2A19k8ftp%2A_ga%2AMTc1ODgxMjk5Ny4xNjUzNjY4NzYz%2A_ga_QKMSDV5369%2AMTY2NTU4ODY2NC41Ny4xLjE2NjU1ODk0OTAuNTkuMC4w" class="w3-bar-item w3-hover-shadow">Help and Support</a>
+                  <a href="https://developer.okta.com/" class="w3-bar-item w3-hover-shadow">Product Documentation</a>
+                  <a href="https://support.okta.com/help/s/?language=en_US&_ga=2.127305293.1186618955.1666210781-1963604644.1666210781&_gl=1%2A1lrpr6q%2A_ga%2AMTk2MzYwNDY0NC4xNjY2MjEwNzgx%2A_ga_QKMSDV5369%2AMTY2NjMwMTAzMy40LjEuMTY2NjMwMTAzNy41Ni4wLjA." class="w3-bar-item w3-hover-shadow">Okta Help Center</a>
+                  <a href="https://developer.okta.com/" class="w3-bar-item w3-hover-shadow">Knowledge Base</a>
+                  <a href="https://www.okta.com/faq/" class="w3-bar-item w3-hover-shadow">Frequently Asked Questions</a>
+                  <a href="https://support.okta.com/help/s/opencase?language=en_US" class="w3-bar-item w3-hover-shadow">Create a Case</a>
+                  <a href="https://www.okta.com/contact-sales/" class="w3-bar-item w3-hover-shadow">Contact Us</a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-        
-        
-      </header>
+        <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+    
+        <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+    </div>
+    
+    <!-- Sidebar on small screens when clicking the menu icon -->
+    <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+      <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+      <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
+      <a href="#team" onclick="w3_close()" class="w3-bar-item w3-button">TEAM</a>
+      <a href="#work" onclick="w3_close()" class="w3-bar-item w3-button">WORK</a>
+      <a href="#pricing" onclick="w3_close()" class="w3-bar-item w3-button">PRICING</a>
+      <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
+    </nav>
+      <!-- Header -->
+      
+      <div class="w3-content w3-card w3-theme-l3" style="max-width:1500px;">
+        <div class="w3-row w3-flex" style="position: relative;">
+          <div class="w3-half w3-padding w3-center">
+            <br><h1 class="w3-xxxlarge"><br><br>Everything starts with Identity</h1>
+            <p class="w3-xlarge">Identity can create great user experiences, increase customer sign-ups, improve employee productivity, and get apps to market faster.<br><br><br><br><br><br><br></p> 
+            <a class="w3-button w3-hover-white w3-card w3-xlarge" href="https://www.okta.com/free-trial/"><i class="fa fa-search w3-margin-right"></i> Get Started</a>
+            <a class="w3-button w3-hover-white w3-card w3-xlarge" href="https://www.okta.com/contact-sales/"><i class="fa fa-phone w3-margin-right"></i> Talk to us</a><br><br><br><br>
+          </div>
+          <div class="w3-half">
+            <img class="" src="https://www.okta.com/_static/web/static/3ba4342698e9557b2cebd2e6ad038d72/a7869/Hero_Photo402x.png" alt="Identity" width="100%">
+          </div>
+        </div>
+      </div>
       
       <div class="w3-content w3-padding-xxlarge" style="max-width:1500px;">
         <b class="w3-xxlarge"> We've got your back, no matter your stack</b>
         <p class="w3-xlarge">We're building a world where anyone can safely use any technology, powered by their Identity.</p>
       </div>
 
-      <div class="w3-content w3-theme-l4 w3-padding-64"  style="max-width:1500px;">
-        <div class="w3-cell-row w3-padding-large w3-xlarge w3-auto">
-          <div class="w3-third w3-cell-middle">
+      <div class="w3-content w3-theme-l4 w3-padding-large"  style="max-width:1500px;">
+        <div class="w3-flex w3-padding-large">
+          <div class="w3-xlarge w3-half">
             <p>Our platform is extensible, easy-to-use, neutral, and works with your existing solutions, so you're free to choose the best technology for now and the future.</p>
             <p>Here’s how we do it.</p>
           </div>
-          <div class="w3-quarter">&nbsp;</div>
-          <div class="w3-third w3-cell-middle">
+          
+          <div class="w3-xlarge">
             <p><b>92%</b> Recommended by Gartner® ‘<a href="https://www.okta.com/resources/analyst-research-gartner-peer-insights-voice-of-the-customer-access-management/">Voice of the Customer</a>’ report</p>
             <p><b>16,400+</b> customers </p>
             <p><b>7,000+</b> integrations</p>
           </div>
         </div>
-        <div class="w3-cell-row w3-auto">
-            <a href="https://www.okta.com/customer-identity/">
-            <div class="w3-card-4 w3-theme-l1 w3-third w3-cell-middle">
+        <div class="w3-flex">
+            <a href="https://www.okta.com/customer-identity/" class="w3-text-decoration-none">
+            <div class="w3-card-4 w3-theme-l1 w3-margin-right w3-hover-theme">
                 <img src="https://www.okta.com/_static/web/static/47ee9b41f224683ac2c6397f454ec7d9/1bb9e/2_Product_CIC402x.webp" alt="Alps" style="width:100% ;">
                 <div class="w3-center w3-padding">
                     <p class="w3-xxlarge">Customer Identity Cloud</p>
@@ -81,9 +268,9 @@
                 </div>
             </div>
             </a>
-            <div class="w3-quarter">&nbsp;</div>
-            <a href="https://www.okta.com/workforce-identity/">
-            <div class="w3-card-4 w3-theme-l1 w3-third w3-cell-middle">
+            
+            <a href="https://www.okta.com/workforce-identity/" class="w3-text-decoration-none">
+            <div class="w3-card-4 w3-theme-l1 w3-hover-theme">
                 <img src="https://www.okta.com/_static/web/static/59ef30280246a7ae16c14aeddeaebc92/1bb9e/2_Product_WIC402x.webp" alt="Alps" style="width:100% ;">
                 <div class="w3-center w3-padding">
                     <p class="w3-xxlarge">Workforce Identity Cloud</p>
@@ -230,26 +417,26 @@
     </div>
 
     <div class="w3-content w3-padding-64" style="max-width:1500px;">
-        <div class="w3-row w3-auto w3-center">
-            <a href="https://www.okta.com/okta-advantage/">
-            <div class="w3-quarter w3-theme-l3 w3-padding-large w3-margin-right-32" style="min-height: 350px;">
+        <div class="w3-row w3-flex" style="position: relative;">
+            <a href="https://www.okta.com/okta-advantage/" class="w3-text-decoration-none">
+            <div class="w3-theme-l3 w3-hover-theme w3-padding-large w3-margin-right-32" style="min-height: 350px;">
                 <h2>The Okta Advantage</h2>
                 <p class="w3-large">Universal. Complete. Easy. Reliable. The worlds most trusted brands choose Okta.</p>
-                <u>Learn More</u>
+                <div style="bottom: 20px;position: absolute;"><u>Learn More</u></div>
             </div>
             </a>
-            <a href="https://www.okta.com/okta-integration-network/">
-            <div class="w3-quarter w3-theme-l3 w3-padding-large w3-margin-right-32" style="min-height: 350px;">
+            <a href="https://www.okta.com/okta-integration-network/" class="w3-text-decoration-none">
+            <div class="w3-theme-l3 w3-hover-theme w3-padding-large w3-margin-right-32" style="min-height: 350px;">
                 <h2>The Okta Integration Network</h2>
                 <p class="w3-large">Universal. Complete. Easy. Reliable. The worlds most trusted brands choose Okta.</p>
-                <u>Learn More</u>
+                <div style="bottom: 20px;position: absolute;"><u>Learn More</u></div>
             </div>
             </a>
-            <a href="https://www.okta.com/customer-first/">
-            <div class="w3-quarter w3-theme-l3 w3-padding-large" style="min-height: 350px;">
+            <a href="https://www.okta.com/customer-first/" class="w3-text-decoration-none">
+            <div class="w3-theme-l3 w3-hover-theme w3-padding-large" style="min-height: 350px;">
                 <h2>Customer First</h2>
                 <p class="w3-large">Universal. Complete. Easy. Reliable. The worlds most trusted brands choose Okta.</p>
-                <u>Learn More</u>
+                <div style="bottom: 20px;position: absolute;"><u>Learn More</u></div>
             </div>
             </a>
         </div>
@@ -269,11 +456,14 @@
             </div>
         </div>
     </div>
+
       <!-- Footer -->
       <footer class="w3-padding-32 w3-theme-action w3-center w3-margin-top">
         <div class="w3-cell-row w3-content w3-center" style="max-width:1500px;">
           <div class="w3-quarter">
-            <img src="img/oktane.png" alt="okta" width="100px"><br><br>
+            <a href="https://www.okta.com/">
+            <svg style="height: 48px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 109.21 36"><path d="M98.97,23.67c-3.05,0-5.2-2.38-5.2-5.51s2.15-5.51,5.2-5.51,5.14,2.38,5.14,5.51-2.12,5.51-5.14,5.51Zm-.49,3.28c2.46,0,4.55-.96,5.87-2.97,.25,1.95,1.66,2.66,3.44,2.66h1.42v-3.09h-.61c-1.01,0-1.26-.49-1.26-1.64V9.69h-3.26v2.51c-1.11-1.76-3.2-2.82-5.6-2.82-4.28,0-8.21,3.59-8.21,8.78s3.94,8.78,8.21,8.78Zm-16.79-4.24c0,2.78,1.72,3.93,3.78,3.93h3.97v-3.09h-2.89c-1.2,0-1.45-.46-1.45-1.64V12.78h4.34v-3.09h-4.34V4h-3.41V22.71Zm-15.53,3.93h3.41v-7.27h1.14l5.81,7.27h4.31l-7.41-9.22,5.69-7.73h-3.84l-4.65,6.53h-1.05V4h-3.41V26.64Zm-11.07-17.26c-4.77,0-8.7,3.59-8.7,8.78s3.94,8.78,8.7,8.78,8.7-3.59,8.7-8.78-3.94-8.78-8.7-8.78Zm0,14.29c-3.05,0-5.2-2.38-5.2-5.51s2.15-5.51,5.2-5.51,5.2,2.38,5.2,5.51-2.15,5.51-5.2,5.51Z" fill="current"></path><path d="M19.8,.26l-.74,9.12c-.35-.04-.7-.06-1.06-.06-.45,0-.89,.03-1.32,.1l-.42-4.42c-.01-.14,.1-.26,.24-.26h.75l-.36-4.47c-.01-.14,.1-.26,.23-.26h2.45c.14,0,.25,.12,.23,.26h0Zm-6.18,.45c-.04-.13-.18-.21-.31-.16l-2.3,.84c-.13,.05-.19,.2-.13,.32l1.87,4.08-.71,.26c-.13,.05-.19,.2-.13,.32l1.91,4.01c.69-.38,1.44-.67,2.23-.85L13.63,.71ZM7.98,3.25l5.29,7.46c-.67,.44-1.28,.96-1.8,1.56l-3.17-3.12c-.1-.1-.09-.26,.01-.35l.58-.48-3.15-3.19c-.1-.1-.09-.26,.02-.35l1.87-1.57c.11-.09,.26-.07,.34,.04ZM3.54,7.57c-.11-.08-.27-.04-.34,.08l-1.22,2.12c-.07,.12-.02,.27,.1,.33l4.06,1.92-.38,.65c-.07,.12-.02,.28,.11,.33l4.04,1.85c.29-.75,.68-1.45,1.16-2.08L3.54,7.57ZM.55,13.33c.02-.14,.16-.22,.29-.19l8.85,2.31c-.23,.75-.36,1.54-.38,2.36l-4.43-.36c-.14-.01-.24-.14-.21-.28l.13-.74-4.47-.42c-.14-.01-.23-.14-.21-.28l.42-2.41h0Zm-.33,5.98c-.14,.01-.23,.14-.21,.28l.43,2.41c.02,.14,.16,.22,.29,.19l4.34-1.13,.13,.74c.02,.14,.16,.22,.29,.19l4.28-1.18c-.25-.74-.41-1.53-.45-2.34L.21,19.31Zm1.42,6.34c-.07-.12-.02-.27,.1-.33l8.26-3.92c.31,.74,.73,1.43,1.23,2.05l-3.62,2.58c-.11,.08-.27,.05-.34-.07l-.38-.66-3.69,2.55c-.11,.08-.27,.04-.34-.08l-1.23-2.12Zm10.01-1.72l-6.43,6.51c-.1,.1-.09,.26,.02,.35l1.88,1.57c.11,.09,.26,.07,.34-.04l2.6-3.66,.58,.49c.11,.09,.27,.07,.35-.05l2.52-3.66c-.68-.42-1.31-.93-1.85-1.51Zm-1.27,10.45c-.13-.05-.19-.2-.13-.32l3.81-8.32c.7,.36,1.46,.63,2.25,.78l-1.12,4.3c-.03,.13-.18,.21-.31,.16l-.71-.26-1.19,4.33c-.04,.13-.18,.21-.31,.16l-2.3-.84h0Zm6.56-7.75l-.74,9.12c-.01,.14,.1,.26,.23,.26h2.45c.14,0,.25-.12,.23-.26l-.36-4.47h.75c.14,0,.25-.12,.24-.26l-.42-4.42c-.43,.07-.87,.1-1.32,.1-.36,0-.71-.02-1.06-.07h0ZM25.76,1.94c.06-.13,0-.27-.13-.32l-2.3-.84c-.13-.05-.27,.03-.31,.16l-1.19,4.33-.71-.26c-.13-.05-.27,.03-.31,.16l-1.12,4.3c.8,.16,1.55,.43,2.25,.78L25.76,1.94h0Zm5.02,3.63l-6.43,6.51c-.54-.58-1.16-1.09-1.85-1.51l2.52-3.66c.08-.11,.24-.14,.35-.05l.58,.49,2.6-3.66c.08-.11,.24-.13,.34-.04l1.88,1.57c.11,.09,.11,.25,.02,.35Zm3.48,5.12c.13-.06,.17-.21,.1-.33l-1.23-2.12c-.07-.12-.23-.15-.34-.08l-3.69,2.55-.38-.65c-.07-.12-.23-.16-.34-.07l-3.62,2.58c.5,.62,.91,1.31,1.23,2.05l8.26-3.92Zm1.3,3.32l.42,2.41c.02,.14-.07,.26-.21,.28l-9.11,.85c-.04-.82-.2-1.6-.45-2.34l4.28-1.18c.13-.04,.27,.05,.29,.19l.13,.74,4.34-1.13c.13-.03,.27,.05,.29,.19h0Zm-.41,8.85c.13,.03,.27-.05,.29-.19l.42-2.41c.02-.14-.07-.26-.21-.28l-4.47-.42,.13-.74c.02-.14-.07-.26-.21-.28l-4.43-.36c-.02,.82-.15,1.61-.38,2.36l8.85,2.31h0Zm-2.36,5.5c-.07,.12-.23,.15-.34,.08l-7.53-5.2c.48-.63,.87-1.33,1.16-2.08l4.04,1.85c.13,.06,.18,.21,.11,.33l-.38,.65,4.06,1.92c.12,.06,.17,.21,.1,.33l-1.22,2.12h0Zm-10.07-3.07l5.29,7.46c.08,.11,.24,.13,.34,.04l1.87-1.57c.11-.09,.11-.25,.02-.35l-3.15-3.19,.58-.48c.11-.09,.11-.25,.01-.35l-3.17-3.12c-.53,.6-1.13,1.13-1.8,1.56h0Zm-.05,10.16c-.13,.05-.27-.03-.31-.16l-2.42-8.82c.79-.18,1.54-.47,2.23-.85l1.91,4.01c.06,.13,0,.28-.13,.32l-.71,.26,1.87,4.08c.06,.13,0,.27-.13,.32l-2.3,.84h0Z" fill="current" fill-rule="evenodd"></path></svg>
+            </a><br><br>
             <p class="w3-cell-middle">To connect with a product expert today, use our <a href="https://www.okta.com/#chat-now">chat box</a>, <a href="https://www.okta.com/contact-sales/">email us</a> , or call <a href="+1-800-425-1267">+1-800-425-1267</a>. </p><br><br>
             <a class="w3-button w3-hover-theme w3-card w3-xlarge" href="https://www.okta.com/contact-sales/"><i class="fa fa-phone w3-margin-right"></i>Contact Us</a>
           </div>
@@ -335,8 +525,8 @@
           <a href="https://www.okta.com/cookies-policy/" class="w3-padding-small"> Cookie Policy </a>
           
           <div class="btn-group dropup w3-right">
-            <a type="button" class="w3-bar-item dropdown-toggle w3-padding-small" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              United States
+            <a class="w3-bar-item dropdown-toggle w3-padding-small" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="fa fa-globe"></i> United States
             </a>
             <div class="dropdown-menu w3-transparent w3-bar-block w3-quarter">
                 <a href="https://www.okta.com/uk/" class="w3-bar-item w3-text-white">United Kingdom</a>
@@ -388,6 +578,21 @@ function currentSlide(img) {
   }
   image.classList.remove('w3-hide');
 }
-        </script>
+// Toggle between showing and hiding the sidebar when clicking the menu icon
+var mySidebar = document.getElementById("mySidebar");
+
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+  } else {
+    mySidebar.style.display = 'block';
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+}
+</script>
 </body>
 </html>
